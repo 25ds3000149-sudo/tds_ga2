@@ -1,0 +1,13 @@
+name: Hello World Action  # Workflow name (shows in Actions tab)
+
+on: [push]  # Triggers on any push to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Uses GitHub's free Linux runner (virtual machine)
+    steps:
+      - name: Checkout code  # Step 1: Grabs your repo files
+        uses: actions/checkout@v4  # Reusable action from GitHub
+
+      - name: 25ds3000149@ds.study.iitm.ac.in  # Your required step (name matches assignment)
+        run: echo "Action- Hello from GitHub Actions by 25DS3000149 AMIT SUNIL BAGUL!(tds_ga1)"  # Simple command
